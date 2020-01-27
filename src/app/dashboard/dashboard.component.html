@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="panel-title">Employee Management</div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <form #usersearch="ngForm" (ngSubmit)="empSearch(usersearch.value)">
+            <div class="row">
+              <div class="col-xs-6 col-md-4 pull-right">
+                <div class="input-group">
+                  <input type="text" name="txtSearch" class="form-control" placeholder="Search" id="txtSearch" ngModel />
+                  <div class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div> <br />
+        <div class="row">
+          <div class="col-md-3" *ngFor="let e of empdata;let i = index">
+            <div class="thumbnail">
+              <img src="/assets/profile/emp.jpg" alt="Lights" style="width:100%">             
+               <div class="caption">
+                <p>Name : {{e.name}}</p>
+                <p>Email : {{e.email}}</p>
+                <p>Phone : {{e.phone}}</p>
+                <a routerLink="/employee_details/{{i}}" routerLinkActive="router-link-active">More Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

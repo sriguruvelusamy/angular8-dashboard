@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+         <div class="panel-title">Employee Details
+             <button type="button" (click)="goBack()" class="btn btn-default pull-right"> <span class="glyphicon glyphicon-circle-arrow-left"></span> Back</button>
+        <br/> </div>
+      </div>
+      <div class="panel-body">
+       <div class="row">
+         <div class="col-md-3">
+           <div class="thumbnail">
+               <img src="/assets/profile/emp.jpg" alt="Lights" style="width:100%">
+               <div class="caption">
+                 <p>Name : {{empdetails.name}}</p>
+                 <p>Age : {{empdetails.age}}</p>
+                 <p>Email : {{empdetails.email}}</p>
+                 <p>Gender : {{empdetails.gender}}</p>
+                 <p>Phone : {{empdetails.phone}}</p>
+               </div>
+           </div>
+         </div>
+         </div>
+       </div>
+      </div>
+    </div>

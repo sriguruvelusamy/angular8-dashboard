@@ -1,0 +1,29 @@
+[
+    {
+    "id":1,
+    "name": "Anbu",
+    "age": 28,
+    "gender": "Male",
+    "phone": 9898781213,
+    "email": "anbu@gmail.com",
+    "imagePath": "/assets/profile/employee1.jpg"
+   },
+   {
+    "id":2,
+    "name": "Raja",
+    "age": 29,
+    "gender": "Male",
+    "phone": 9898781113,
+    "email": "raja@gmail.com",
+    "imagePath": "/assets/profile/employee2.jpg"
+   },
+   {
+    "id":3,
+    "name": "Venkat",
+    "age": 32,
+    "gender": "Male",
+    "phone": 9798781114,
+    "email": "venkat@gmail.com",
+    "imagePath": "/assets/profile/employee3.jpg"
+   }
+]
